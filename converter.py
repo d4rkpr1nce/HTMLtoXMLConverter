@@ -16,7 +16,7 @@ def convert_to_xml(filename):
 
     base = os.path.basename(filename)
 
-    xml_file = (os.path.dirname(filename) + '/' + os.path.splitext(base)[0] + '.xml')
+    xml_file = os.path.join(os.path.dirname(filename),os.path.splitext(base)[0] + '.xml')
     
     with open(filename, 'r', encoding='utf-8') as inp:
         
