@@ -28,9 +28,13 @@ def convert_to_xml(filename):
 
 def main():
 
-    userChoice = str(input("Your choice:"))
+    print("Press 1 to: Convert multiple HTML files within the same directory.")
 
-    if choice == 1:
+    print("Press 2 to: Convert a single HTML file.")
+
+    userChoice = int(input("Your choice: "))
+
+    if userChoice == 1:
 
         path = str(input("Please give the path to the HTML files: "))
 
@@ -39,7 +43,7 @@ def main():
         print(f"[+] Files converted successfully to {path}")
 
     
-    if choice == 2:
+    if userChoice == 2:
 
         path = str(input("Please give the path to the HTML file: "))
 
